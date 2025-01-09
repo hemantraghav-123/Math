@@ -1,19 +1,63 @@
-// Math.round(4.7)
-// Math.round(4.9)
-// Math.round(4.2)
-// Math.round(-4.7)
-// console.log()
+document.write("<h1 style=color:green;>View on Console</h1>")
 
-// Math.ceil(4.7)
-// Math.ceil(4.9)
-// Math.ceil(4.2)
-// Math.ceil(-4.7)
+console.log("Math.round : " + Math.round(4.6))
+console.log("Math.round : " + Math.round(4.5))
+console.log("Math.round : " + Math.round(4.4))
+console.log("Math.ceil : " + Math.ceil(4.5))
+console.log("Math.floor : " + Math.floor(4.5))
+console.log("Math.ceil : " + Math.ceil(-4.5))
+console.log("Math.floor : " + Math.floor(-4.5))
+console.log("Math.truncate : " + Math.trunc(4.5))
+console.log("Math.truncate : " + Math.trunc(-4.5))
+console.log("Math.sign : " + Math.sign(-4.5))
+console.log("Math.sign : " + Math.sign(4.5))
+console.log("Math.sign : " + Math.sign(0))
+console.log("Math.Pow : " + Math.pow(8, 2))
+console.log("Math.sqrt : " + Math.sqrt(64))
+console.log("Math.abs : " + Math.abs(-4.7))
+console.log("Math.cos : " + Math.cos(1))
+console.log("Math.sin : " + Math.sin(1))
+console.log("Math.min : " + Math.min(0, 3, 6, 3, 5, 32))
+console.log("Math.max : " + Math.max(0, 3, 6, 3, 5, 32))
+console.log("Math.log2 : " + Math.log2(10))
+console.log("Math.random : " + Math.random())
+console.log("Math.random : " + Math.floor(Math.random()))
+console.log("Math.random : " + Math.floor(Math.random() * 10))
+console.log("Math.random : " + Math.floor(Math.random() * 100))
+console.log("Math.random : " + Math.floor(Math.random() * 101))
 
 
-// Math.floor(4.7)
-// Math.floor(4.9)
-// Math.floor(4.2)
-// Math.floor(-4.7)
+rd = Math.random()
+
+function getRndInteger(min, max) {
+    return Math.floor(rd * (max - min)) + min;
+}
+
+console.log(getRndInteger(0, 9));
+
+function getNewRndInteger(min, max) {
+    return Math.floor(rd * (max - min + 1)) + min;
+}
+
+console.log(getNewRndInteger(0, 9));
 
 
-Math.min(0,150,30,20,-8,-200)
+
+console.log(Number(3.14))
+console.log(Number(Math.PI))
+console.log(Number("Hi"))
+console.log(Number(" "))
+console.log(Number("99 88"))
+console.log(Number("Jonh"))
+
+let y = "John";
+let x =+ y;
+console.log(x)
+
+console.log(x.toString())
+console.log((123).toString())
+
+d = new Date()
+
+console.log(d.getTime())
+console.log((d.getTime()).toString())
